@@ -1,0 +1,149 @@
+/* GLOBAL */
+*{
+    margin:0;
+    padding:0;
+}
+/* BODY */
+body{
+    margin:0;
+    padding:0;
+    background-image:url(image1.jpg);
+    background-size:205vh;
+    background-repeat:no-repeat;
+    background-position-y:-10vh;
+    color:#fff;
+    font-family:Poppins;
+}
+/* NAVBAR STYLES */
+.navbar .navbar-brand{
+     font-size:2rem;
+     font-weight:500;
+     transform:translateX(45vw);
+     font-family:Poppins;
+}
+.navbar .nav-item .nav-link{
+    font-weight:400;
+    transform:translateX(-5vw);
+    color:#fff;
+    font-family:Poppins;
+}
+/* MAIN STYLES */
+main article  {
+    transform:translateY(30vh);
+    display:flex;
+    flex-direction:column;
+    row-gap:2vh;
+    text-align:center;
+    align-content:center;
+    justify-content:center;
+}
+main article h1{
+    font-size:3rem;
+    font-weight:600;
+}
+main .button{
+    display:flex;
+    flex-direction:row;
+    column-gap:2vh;
+    text-align:center;
+    align-content:center;
+    justify-content:center;
+    transform:translateY(30vh);
+}
+/* FOOTER STYLES */
+footer article {
+    display:flex;
+    flex-direction:row;
+    column-gap:1vw;
+    text-align:right;
+    align-content:right;
+    justify-content:right;
+    transform:translateY(42vh);
+    color:#000
+}
+footer article ul{
+    display:flex;
+    flex-direction:row;
+    column-gap:2vw;
+    text-align:right;
+    list-style:none;
+}
+footer article ul li a{
+    text-decoration:none;
+    color:#000;
+}
+footer article ul li a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+footer .link{
+    display:flex;
+    flex-direction:row;
+    column-gap:2vw;
+    font-size:1.7rem;
+}
+footer .link a{
+    transform:translateY(45vh);
+    color:#000;
+    border:none;
+    border-radius:5px;
+    width:3%;
+    text-align:center;
+}
+footer .link a:hover{
+     color:#fff;
+     cursor:pointer;
+}
+/* MEDIA QUIERIES */
+@media only screen and (max-width:280px) {
+   .navbar .navbar-brand{
+       transform:translateX(20vw);
+   }
+   .navbar .nav-item .nav-link{
+    transform:translateX(1vw);
+   }
+   body{
+      background-size:1506px;
+      background-position-x:-130vw;
+   }
+footer .link{
+    display:flex;
+    flex-direction:column;
+    column-gap:2vw;
+    font-size:1.3rem;
+}
+footer .link a{
+    transform:translateY(40vh);
+    color:#000;
+    border:none;
+    border-radius:5px;
+    width:3%;
+    text-align:center;
+}
+}
+@media only screen and (max-width:600px) {
+
+ footer .link{
+     display:flex;
+     flex-direction:column;
+     column-gap:2vw;
+     font-size:1.3rem;
+ }
+ footer .link a{
+     transform:translateY(40vh);
+     color:#000;
+     border:none;
+     border-radius:5px;
+     width:3%;
+     text-align:center;
+ }
+ }
+@media only screen and (max-width:1112px) {
+    .navbar .nav-item .nav-link{
+     transform:translateX(1vw);
+    }
+    body{
+       background-size:2000px;
+       background-position-x:-30vw;
+    }
+ }
